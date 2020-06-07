@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {% if get_message %} 
+      <p> {{ get_message }}
+          <a href="/">Input data</a> 
+      </p>
+  {% else %}
+  <h2>Football Result in tables</h2>
+
+  <div>
+      <table class="table table-striped table-hover">
+         <thead class="thead-dark">
+           <tr>
+             <th>PLAYERS</th>
+             <th>FOOTBALL CLUB</th>
+             <th>AREA</th>
+             <th>CITY</th>
+             <th>DATE</th>
+           </tr>
+         </thead>
+         <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+      
+      
+{% endif %}
+{% endblock %}

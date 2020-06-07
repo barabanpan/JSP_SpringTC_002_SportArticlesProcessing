@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>Football</h2> 
+<form name="input_form" method="post" action="/output"> 
+  <p>Input data</p>
+  <p>
+     <textarea class="form-control rounded-0" name="article" cols="50" rows="10"></textarea>
+  </p> 
+  <p> <input type="submit" value="Submit"></p>
+ </form>
+
+{% endblock %}
