@@ -20,17 +20,18 @@
            </tr>
          </thead>
          <tbody>
+      {% for i in range(length) %}
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>{{ ents_dict["PERSON"][i] }}</td>
+        <td>{{ ents_dict["ORG"][i] }}</td>
+        <td>{{ ents_dict["LOC"][i] }}</td>
+        <td>{{ ents_dict["GPE"][i] }}</td>
+        <td>{{ ents_dict["DATE"][i] }}</td>
       </tr>
+      {% endfor %}
     </tbody>
   </table>
 </div>
-      
       
 {% endif %}
 {% endblock %}
